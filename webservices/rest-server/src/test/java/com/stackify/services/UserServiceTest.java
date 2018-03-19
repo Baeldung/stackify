@@ -1,5 +1,6 @@
 package com.stackify.services;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import io.restassured.RestAssured;
@@ -8,6 +9,7 @@ import static org.hamcrest.CoreMatchers.*;
 
 public class UserServiceTest {
     @Test
+    @Ignore
     public void whenAddUser_thenGetUserOk() {
         RestAssured.baseURI = "http://localhost:8080/rest-server";
 
