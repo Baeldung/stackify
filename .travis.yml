@@ -9,12 +9,12 @@ script: travis_wait 60 mvn -q test -fae
 sudo: required
 
 jdk:
-  - oraclejdk8
+  - oraclejdk9
 
 addons:
   apt:
     packages:
-      - oracle-java8-installer
+      - oracle-java9-installer
 
 cache:
   directories:
