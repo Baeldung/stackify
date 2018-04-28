@@ -27,7 +27,6 @@ import java.util.stream.Stream;
 import org.junit.After;
 import org.junit.Test;
 
-@SuppressWarnings("unchecked")
 public class EmployeeTest {
     private String fileName = "src/test/resources/test.txt";
     
@@ -73,7 +72,7 @@ public class EmployeeTest {
         assert(empStream instanceof Stream<?>);
     }
 
-	@Test
+    @Test
     public void whenIncrementSalaryForEachEmployee_thenApplyNewSalary() {
         Employee[] arrayOfEmps = {
             new Employee(1, "Jeff Bezos", 100000.0), 

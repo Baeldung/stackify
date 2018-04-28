@@ -112,7 +112,7 @@ public class UsersTest implements DatabaseConnectionTest {
     }
 
     @Test
-    @DisabledOnEnvironment({ "dev", "prod"})
+    @DisabledOnEnvironment({ "dev", "prod")
     void testFail() {
         fail("this test fails");
     }
