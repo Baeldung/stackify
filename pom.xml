@@ -24,5 +24,9 @@
         <module>tomcat-app</module>
         <module>webservices</module>
     </modules>
+	
+	<properties>
+		<gib.referenceBranch>refs/remotes/origin/master</gib.referenceBranch>
+	</properties>
 
 </project>
