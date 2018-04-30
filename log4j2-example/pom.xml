@@ -4,12 +4,13 @@
     <groupId>log4j2-example</groupId>
     <artifactId>log4j2-example</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+	
     <parent>
-        <groupId>com.baeldung</groupId>
-        <artifactId>parent-modules</artifactId>
+        <groupId>com.stackify</groupId>
+        <artifactId>parent-module</artifactId>
         <version>1.0.0-SNAPSHOT</version>
-        <relativePath>../../</relativePath>
     </parent>
+	
     <dependencies>
         <!-- This is the needed core component. -->
         <dependency>
@@ -28,7 +29,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>${junit.version}</version>
         </dependency>
     </dependencies>
 
@@ -41,11 +42,24 @@
                 </excludes>
             </resource>
         </resources>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<configuration>
+					<source>${maven.compiler.source.version}</source>
+					<target>${maven.compiler.target.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
     </build>
 
     <properties>
         <jackson.version>2.8.8.1</jackson.version>
         <log4j-core.version>2.8.2</log4j-core.version>
+		<maven.compiler.source.version>1.8</maven.compiler.source.version>
+		<maven.compiler.target.version>1.8</maven.compiler.target.version>
     </properties>
 
 </project>
