@@ -4,12 +4,13 @@
     <groupId>com.stackify</groupId>
     <artifactId>logback-example</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+
     <parent>
-        <groupId>com.baeldung</groupId>
-        <artifactId>parent-modules</artifactId>
+        <groupId>com.stackify</groupId>
+        <artifactId>parent-module</artifactId>
         <version>1.0.0-SNAPSHOT</version>
-        <relativePath>../../</relativePath>
     </parent>
+
     <dependencies>
         <dependency>
             <groupId>ch.qos.logback</groupId>
@@ -29,4 +30,9 @@
             <version>3.0.7</version>
         </dependency>
     </dependencies>
+	
+	 <properties>
+	    <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
 </project>

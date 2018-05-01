@@ -24,11 +24,11 @@ import java.util.function.BinaryOperator;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Test;
 
 public class EmployeeTest {
-    private String fileName = "src/test/resources/test.txt";
+    private static String fileName = "src/test/resources/test.txt";
     
     private static Employee[] arrayOfEmps = {
         new Employee(1, "Jeff Bezos", 100000.0), 
@@ -39,8 +39,8 @@ public class EmployeeTest {
     private static List<Employee> empList = Arrays.asList(arrayOfEmps);
     private static EmployeeRepository employeeRepository = new EmployeeRepository(empList);
 
-    @After
-    public void cleanup() throws IOException {
+    @AfterClass
+    public static void cleanup() throws IOException {
         Files.deleteIfExists(Paths.get(fileName));
     }
     

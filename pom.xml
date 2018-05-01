@@ -25,4 +25,12 @@
         <module>webservices</module>
     </modules>
 
+    <properties>
+        <gib.referenceBranch>refs/remotes/origin/master</gib.referenceBranch>
+        <junit.version>4.12</junit.version>
+        <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
+        <maven-failsafe-plugin.version>2.19.1</maven-failsafe-plugin.version>
+        <maven-surefire-plugin.version>2.21.0</maven-surefire-plugin.version>
+    </properties>
+
 </project>

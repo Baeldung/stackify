@@ -3,6 +3,8 @@
 
 # Log file
 *.log
+logs/
+log.html
 
 # BlueJ files
 *.ctxt
@@ -24,4 +26,19 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
+# Eclipse
+.settings/
+*.project
+*.classpath
+.prefs
+*.prefs
+.metadata/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Maven
+log/
 target/
