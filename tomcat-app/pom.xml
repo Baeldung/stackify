@@ -74,7 +74,7 @@
     <properties>
         <logback-classic.version>1.2.3</logback-classic.version>
         <jersey-container-servlet.version>2.25.1</jersey-container-servlet.version>
-        <h2database.version>1.4.195</h2database.version>
+        <h2database.version>2.0.206</h2database.version>
         <rest-assured.version>3.0.3</rest-assured.version>
         <log4j-core.version>2.8.2</log4j-core.version>
         <javamelody-core.version>1.69.0</javamelody-core.version>
